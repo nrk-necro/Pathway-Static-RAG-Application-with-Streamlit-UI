@@ -1,0 +1,1 @@
+# Pathway-Static-RAG-Application-with-Streamlit-UI
