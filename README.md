@@ -16,6 +16,7 @@ This project demonstrates how to create a Retrieval-Augmented Generation (RAG) a
 - [How to Run](#how-to-run)
   - [Running Locally](#running-locally)
   - [Running with Docker](#running-with-docker)
+- [Demo for running the application(#Demo)
 - [Using the Application](#using-the-application)
 - [Adding your own data](#adding-your-own-data)
 - [Querying Documents](#querying-documents)
@@ -123,6 +124,9 @@ GEMINI_API_KEY=your_api_key_here
 
 2. Open a web browser and navigate to the URL provided by Streamlit (usually `http://localhost:8501`).
 
+##Demo
+
+Refer to the Demo video for running the application
 
 ## Using the Application
 
