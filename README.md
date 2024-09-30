@@ -39,7 +39,7 @@ This application combines the power of Pathway's real-time document indexing and
 
 ## How It Works
 
-The pipeline uses Pathway connectors to read data from various sources (local drive, Google Drive, SharePoint) with low-latency change detection. Binary objects are parsed using the [unstructured](https://unstructured.io/) library and split into chunks. The Gemini API is used to embed these chunks.
+The pipeline uses Pathway connectors to read data from local drive. Binary objects are parsed using the [unstructured](https://unstructured.io/) library and split into chunks. The Gemini API is used to embed these chunks.
 
 Embeddings are then indexed using Pathway's machine learning library. Users can query this index through simple HTTP requests to the provided endpoints.
 
