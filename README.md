@@ -17,7 +17,7 @@ This project demonstrates how to create a Retrieval-Augmented Generation (RAG) a
   - [Running Locally](#running-locally)
   - [Running with Docker](#running-with-docker)
 - [Using the Application](#using-the-application)
-- [Adding your own data]
+- [Adding your own data](#adding-your-own-data)
 - [Querying Documents](#querying-documents)
   - [Listing Inputs](#listing-inputs)
   - [Searching Documents](#searching-documents)
