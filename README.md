@@ -29,7 +29,7 @@ This project demonstrates how to create a Retrieval-Augmented Generation (RAG) a
 
 ## Overview
 
-This application combines the power of Pathway's real-time document indexing and retrieval capabilities with a user-friendly Streamlit interface. It uses the Gemini API for natural language processing tasks such as question answering and text summarization, providing an always up-to-date knowledge base for your LLM without the need for separate ETL processes.
+This application combines the Pathway's document indexing and data retrieval capabilities with a user-friendly Streamlit interface. It uses the Gemini API for natural language processing tasks such as question answering and text summarization, providing an always up-to-date knowledge base for your LLM without the need for separate ETL processes.
 
 ## Features
 
