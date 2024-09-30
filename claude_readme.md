@@ -12,7 +12,6 @@ This project demonstrates how to create a Retrieval-Augmented Generation (RAG) a
 - [Installation](#installation)
 - [Configuration](#configuration)
   - [LLM Model](#llm-model)
-  - [Data Sources](#data-sources)
   - [API Key Configuration](#api-key-configuration)
 - [How to Run](#how-to-run)
   - [Running Locally](#running-locally)
@@ -71,7 +70,7 @@ The LLM can be configured to use different models within the Gemini family, allo
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/pathway-rag-streamlit.git
+   git clone https://github.com/nrk-necro/pathway-rag-streamlit.git
    cd pathway-rag-streamlit
    ```
 
@@ -91,44 +90,6 @@ llm_config:
   model: "gemini/gemini-pro"
 ```
 
-### Data Sources
-
-Configure data sources in the `config.yaml` file. Supported sources include:
-
-1. Local Files:
-   ```yaml
-   sources:
-     - local_files:
-       kind: local
-       config:
-         path: "data/"
-   ```
-
-2. Google Drive:
-   ```yaml
-   sources:
-     - google_drive_folder:
-       kind: gdrive
-       config:
-         object_id: "your_folder_id"
-         service_user_credentials_file: "path_to_credentials.json"
-         refresh_interval: 5
-   ```
-
-3. SharePoint:
-   ```yaml
-   sources:
-     - sharepoint_folder:
-       kind: sharepoint
-       config:
-         root_path: "your_root_path"
-         url: "your_sharepoint_url"
-         tenant: "your_tenant"
-         client_id: "your_client_id"
-         cert_path: "path_to_cert.pem"
-         thumbprint: "your_thumbprint"
-         refresh_interval: 5
-   ```
 
 ### API Key Configuration
 
@@ -155,17 +116,13 @@ GEMINI_API_KEY=your_api_key_here
 
 ### Running Locally
 
-1. Start the Pathway RAG application:
-   ```
-   python app.py
-   ```
 
-2. In a separate terminal, run the Streamlit app:
+1. In a separate terminal, run the Streamlit app:
    ```
    streamlit run streamlit_app.py
    ```
 
-3. Open a web browser and navigate to the URL provided by Streamlit (usually `http://localhost:8501`).
+2. Open a web browser and navigate to the URL provided by Streamlit (usually `http://localhost:8501`).
 
 
 ## Using the Application
@@ -240,7 +197,7 @@ curl -X 'POST' \
 
 - `/v1/pw_ai_answer`: For question answering
 - `/v1/retrieve`: For document search
-- `/v1/pw_list_documents`: To list all indexed documents
+- `/v1/pw_list_documents`: To list all indexed documents (not included in this project)
 - `/v1/pw_ai_summary`: For text summarization
 - `/v1/statistics`: To fetch basic statistics
 
@@ -252,9 +209,3 @@ To customize the application:
 2. Update the `streamlit_app.py` file to alter the user interface or add new functionalities.
 3. Adjust the `config.yaml` file to change data sources, model configurations, or other settings.
 
-For more advanced customizations, consider:
-- Implementing custom document splitting strategies
-- Adding a re-ranking layer for search results
-- Integrating additional LLM models or APIs
-
-For more information on Pathway and its capabilities, visit the [Pathway documentation](https://pathway.com/developers/user-guide/introduction/welcome).
