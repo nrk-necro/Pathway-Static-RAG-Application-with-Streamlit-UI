@@ -32,12 +32,10 @@ This application combines the power of Pathway's real-time document indexing and
 
 ## Features
 
-- Real-time document indexing from local directories, Google Drive, or Microsoft SharePoint
-- Ask questions with or without RAG (Retrieval-Augmented Generation)
+- Ask questions with or without RAG  from static documents in local directory(Retrieval-Augmented Generation)
 - Search indexed documents with customizable filters
 - List all indexed documents with metadata
 - Summarize multiple texts
-- Display basic statistics about indexed documents
 
 ## How It Works
 
@@ -131,11 +129,8 @@ GEMINI_API_KEY=your_api_key_here
 The Streamlit interface provides four main tabs:
 
 1. **Ask Question**: Enter a question and optionally use RAG with filters.
-2. **Search Documents**: Search for documents using a query and specify the number of results.
-3. **List Documents**: View all indexed documents and their metadata.
-4. **Summarize Texts**: Input multiple texts and get a summary.
-
-You can also view basic statistics about indexed documents in the sidebar.
+2. **List Documents**: View all indexed documents and their metadata.
+3. **Summarize Texts**: Input multiple texts and get a summary.
 
 ## Adding your own data
 Currently, the RAG application uses the book 'Zombie Survival Guide - Complete Protection from the Living Dead.pdf'. Howeever, you can add your own data in the data folder.
@@ -200,10 +195,8 @@ curl -X 'POST' \
 ## API Endpoints
 
 - `/v1/pw_ai_answer`: For question answering
-- `/v1/retrieve`: For document search
 - `/v1/pw_list_documents`: To list all indexed documents (not included in this project)
 - `/v1/pw_ai_summary`: For text summarization
-- `/v1/statistics`: To fetch basic statistics
 
 ## Customization
 
