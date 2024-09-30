@@ -17,6 +17,7 @@ This project demonstrates how to create a Retrieval-Augmented Generation (RAG) a
   - [Running Locally](#running-locally)
   - [Running with Docker](#running-with-docker)
 - [Using the Application](#using-the-application)
+- [Adding your own data]
 - [Querying Documents](#querying-documents)
   - [Listing Inputs](#listing-inputs)
   - [Searching Documents](#searching-documents)
@@ -135,6 +136,9 @@ The Streamlit interface provides four main tabs:
 4. **Summarize Texts**: Input multiple texts and get a summary.
 
 You can also view basic statistics about indexed documents in the sidebar.
+
+## Adding your own data
+Currently, the RAG application uses the book 'Zombie Survival Guide - Complete Protection from the Living Dead.pdf'. Howeever, you can add your own data in the data folder.
 
 ## Querying Documents
 
